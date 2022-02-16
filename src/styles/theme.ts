@@ -11,6 +11,7 @@ export default {
     text_medium: "#767191",
     text_light: "#9793AE",
     text_dark: "#081F32",
+    text_white: "#ffffff",
 
     background: "#F7F7F7",
     secondary_background: "#F3F2F7",
