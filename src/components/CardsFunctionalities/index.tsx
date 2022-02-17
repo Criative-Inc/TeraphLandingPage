@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 
-import { ContentCards, Card } from './styles'
+import { Card } from './styles'
 
 interface CardsFunctionalitiesProps {
   icon: ReactElement;
@@ -10,15 +10,13 @@ interface CardsFunctionalitiesProps {
 
 export function CardsFunctionalities({icon, title, content}: CardsFunctionalitiesProps ){
   return (
-    <ContentCards>
-      <Card>
-        <div className="icon">
-          {icon}
-        </div>
-        <h3>{title}</h3>
+    <Card>
+      <div className="icon">
+        {icon}
+      </div>
+      <h3>{title}</h3>
 
-        <p>{content}</p>
-      </Card>
-    </ContentCards>
+      <p>{content}</p>
+    </Card>
   );
 }

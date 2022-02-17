@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContentCards = styled.section`
+export const Card = styled.div`
   .icon {
     display: flex;
     justify-content: center;
@@ -12,9 +12,7 @@ export const ContentCards = styled.section`
 
     border-radius: 0.5rem;
   }
-`;
 
-export const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;

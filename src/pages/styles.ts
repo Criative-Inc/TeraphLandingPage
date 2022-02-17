@@ -5,8 +5,6 @@ export const ContentHome = styled.section`
   justify-content: space-between;
   align-items: center;
 
-  margin: 0 40px;
-
   height: calc(100vh - 170px);
 
   .hero-section {
@@ -44,7 +42,7 @@ export const ContentProject = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
 
   .description-project {
     max-width: 570px;
@@ -68,7 +66,7 @@ export const ContentProject = styled.section`
 `;
 
 export const ContentFunctionalities = styled.section`
-  height: 80vh;
+  height: 90vh;
 
   .box-cards {
     display: flex;
@@ -77,6 +75,29 @@ export const ContentFunctionalities = styled.section`
     height: 100%;
 
     margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 3.438rem;
+    color: ${({ theme }) => theme.colors.text_pure}
+    font-weight: medium;
+    
+    text-align: center;
+  }
+`;
+
+export const ContentTestimony = styled.section`
+  height: 90vh;
+
+  .box-testimony {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+    margin-top: 80px;
+
+    height: 100%;
   }
 
   h1 {

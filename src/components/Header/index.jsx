@@ -12,7 +12,7 @@ export function Header(){
   }
 
   useEffect(() => {
-    const menuBtn = document.querySelector('.menu-btn');
+    const menuBtn= document.querySelector('.menu-btn');
     let menuOpen = false;
 
     menuBtn.addEventListener('click', () => {
@@ -31,7 +31,7 @@ export function Header(){
   return (
     <Container>
       <ContentHeader>
-        <Image src="/logo.png" alt="logo" width={150} height={150} />
+        <Image src="/logo.svg" alt="logo" width={60} height={60} />
 
         <nav>
           <ul>

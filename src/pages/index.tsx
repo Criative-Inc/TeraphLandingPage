@@ -8,7 +8,8 @@ import { Container } from '../styles/global'
 
 import { Calendar, File, Clock } from 'react-feather';
 
-import { ContentFunctionalities, ContentHome, ContentProject } from './styles'
+import { ContentFunctionalities, ContentHome, ContentProject, ContentTestimony } from './styles'
+import { Testimony } from '../components/Testimony';
 
 const Home: NextPage = () => {
   return (
@@ -107,6 +108,48 @@ const Home: NextPage = () => {
             />
           </div>
         </ContentFunctionalities>
+
+        <ContentTestimony>
+          <h1>Depoimentos</h1>
+          <div className="box-testimony">
+            <Testimony
+              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis neque a purus blandit
+              cursus in nec erat. Curabitur vestibulum nisi quam. Curabitur tristique euismod neque et hendrerit. Donec
+              in tempor erat. Sed at mi vel elit aliquet tristique sit amet ut justo"
+              imgUrl="https://media-exp1.licdn.com/dms/image/C4D03AQF6WGfjc5dNyw/profile-displayphoto-shrink_400_400/0/1635610390975?e=1650499200&v=beta&t=KHE9V-bzZLm45Ews0SmLQK3q8CDHNVJ8bsOk9UL_M-k"
+              profession="Psicólogo"
+              name="Eduardo Araújo"
+            />
+
+            <Testimony
+              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis neque a purus blandit
+              cursus in nec erat. Curabitur vestibulum nisi quam. Curabitur tristique euismod neque et hendrerit. Donec
+              in tempor erat. Sed at mi vel elit aliquet tristique sit amet ut justo"
+              imgUrl="https://media-exp1.licdn.com/dms/image/C4D03AQF6WGfjc5dNyw/profile-displayphoto-shrink_400_400/0/1635610390975?e=1650499200&v=beta&t=KHE9V-bzZLm45Ews0SmLQK3q8CDHNVJ8bsOk9UL_M-k"
+              profession="Psicólogo"
+              name="Eduardo Araújo"
+            />
+
+            <Testimony
+              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis neque a purus blandit
+              cursus in nec erat. Curabitur vestibulum nisi quam. Curabitur tristique euismod neque et hendrerit. Donec
+              in tempor erat. Sed at mi vel elit aliquet tristique sit amet ut justo"
+              imgUrl="https://media-exp1.licdn.com/dms/image/C4D03AQF6WGfjc5dNyw/profile-displayphoto-shrink_400_400/0/1635610390975?e=1650499200&v=beta&t=KHE9V-bzZLm45Ews0SmLQK3q8CDHNVJ8bsOk9UL_M-k"
+              profession="Psicólogo"
+              name="Eduardo Araújo"
+            />
+
+            <Testimony
+              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis neque a purus blandit
+              cursus in nec erat. Curabitur vestibulum nisi quam. Curabitur tristique euismod neque et hendrerit. Donec
+              in tempor erat. Sed at mi vel elit aliquet tristique sit amet ut justo"
+              imgUrl="https://media-exp1.licdn.com/dms/image/C4D03AQF6WGfjc5dNyw/profile-displayphoto-shrink_400_400/0/1635610390975?e=1650499200&v=beta&t=KHE9V-bzZLm45Ews0SmLQK3q8CDHNVJ8bsOk9UL_M-k"
+              profession="Psicólogo"
+              name="Eduardo Araújo"
+            />
+            
+          </div>
+        </ContentTestimony>
       </Container>
       
   </>

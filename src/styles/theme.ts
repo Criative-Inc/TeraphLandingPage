@@ -16,8 +16,4 @@ export default {
     background: "#F7F7F7",
     secondary_background: "#F3F2F7",
   },
-  fonts: {
-    regular: "Roboto_400Regular",
-    medium: "Roboto_500Medium",
-  },
 };
