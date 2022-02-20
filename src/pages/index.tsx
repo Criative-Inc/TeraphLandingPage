@@ -8,8 +8,10 @@ import { Container } from '../styles/global'
 
 import { Calendar, File, Clock } from 'react-feather';
 
-import { ContentFunctionalities, ContentHome, ContentProject, ContentTestimony } from './styles'
+import { ContentFunctionalities, ContentHome, ContentPlans, ContentProject, ContentTestimony } from './styles'
 import { Testimony } from '../components/Testimony';
+import { Plans } from '../components/Plans';
+import { Footer } from '../components/Footer';
 
 const Home: NextPage = () => {
   return (
@@ -22,7 +24,7 @@ const Home: NextPage = () => {
       <Header />
 
       <Container>
-        <ContentHome>
+        <ContentHome id="home">
           <div className="hero-section">
             <h1>
               <span>Sua Plataforma</span> de Atendimento e Gerenciamento de pacientes
@@ -63,7 +65,7 @@ const Home: NextPage = () => {
           </figure>
         </ContentHome>
 
-        <ContentProject>
+        <ContentProject id="teraph">
           <figure>
             <Image
               src="/projeto.svg"
@@ -85,7 +87,7 @@ const Home: NextPage = () => {
           </div>
         </ContentProject>
 
-        <ContentFunctionalities>
+        <ContentFunctionalities id="functionalities">
           <h1>Funcionalidades</h1>
 
           <div className="box-cards">
@@ -109,7 +111,7 @@ const Home: NextPage = () => {
           </div>
         </ContentFunctionalities>
 
-        <ContentTestimony>
+        <ContentTestimony id="testimony">
           <h1>Depoimentos</h1>
           <div className="box-testimony">
             <Testimony
@@ -147,11 +149,29 @@ const Home: NextPage = () => {
               profession="Psicólogo"
               name="Eduardo Araújo"
             />
-            
           </div>
         </ContentTestimony>
+
+        <ContentPlans id="plans">
+          <h1>Planos</h1>
+          
+          <div className="box-plans">
+            <Plans
+              price={69}
+              typePlan="Básico"
+              isPremium={false}
+            />
+
+            <Plans
+              price={139}
+              typePlan="Premium"
+              isPremium={true}
+            />
+          </div>
+        </ContentPlans>
       </Container>
-      
+
+      <Footer />
   </>
   )
 }

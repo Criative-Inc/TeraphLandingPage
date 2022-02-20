@@ -1,11 +1,18 @@
 import styled from "styled-components";
 
 export const TestimonyBox = styled.section`
-  max-width: 550px;
-  height: 270px;
+  max-width: 552px;
+  height: 272px;
+  margin: 31px 0;
 
-  background-color: ${({ theme }) => theme.colors.text_white};
+  background-color: ${({ theme }) => theme.colors.white};
   border-radius: 0.5rem;
+
+  transition: all 0.2s;
+
+  :hover {
+    border: 2px solid ${({ theme }) => theme.colors.primary_pure};
+  }
 
   p {
     padding: 32px 45px 24px 32px;

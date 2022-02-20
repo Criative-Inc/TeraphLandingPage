@@ -95,9 +95,28 @@ export const ContentTestimony = styled.section`
     flex-wrap: wrap;
     align-items: center;
 
-    margin-top: 80px;
+    margin-top: 50px;
+  }
 
-    height: 100%;
+  h1 {
+    font-size: 3.438rem;
+    color: ${({ theme }) => theme.colors.text_pure}
+    font-weight: medium;
+    
+    text-align: center;
+  }
+`;
+
+export const ContentPlans = styled.section`
+  height: 100vh;
+  margin-top: 130px;
+
+  .box-plans {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 50px 0;
   }
 
   h1 {

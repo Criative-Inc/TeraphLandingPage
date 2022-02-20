@@ -35,11 +35,11 @@ export function Header(){
 
         <nav>
           <ul>
-            <li>Home</li>
-            <li>Teraph</li>
-            <li>Funcionalidades</li>
-            <li>Depoimentos</li>
-            <li>Planos</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#teraph">Teraph</a> </li>
+            <li><a href="#functionalities">Funcionalidades</a></li>
+            <li><a href="#testimony">Depoimentos</a></li>
+            <li><a href="#plans">Planos</a></li>
           </ul>
 
           <button>Login</button>
@@ -56,9 +56,9 @@ export function Header(){
         <nav className="responsive-navbar">
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#project">Teraph</a></li>
-            <li><a href="#subject">Funcionalidades</a></li>
-            <li><a href="#sponsors">Depoimentos</a></li>
+            <li><a href="#teraph">Teraph</a> </li>
+            <li><a href="#functionalities">Funcionalidades</a></li>
+            <li><a href="#testimony">Depoimentos</a></li>
             <li><a href="#plans">Planos</a></li>
           </ul>
         </nav>

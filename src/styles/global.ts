@@ -22,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
     border: none;
   }
 
-  a {
+  a, u {
     text-decoration: none;
   }
 

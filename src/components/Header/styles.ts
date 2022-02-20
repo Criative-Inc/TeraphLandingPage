@@ -152,6 +152,10 @@ export const ContentHeader = styled.section`
         color: ${({ theme }) => theme.colors.text_pure};
 
         transition: filter 0.2s;
+
+        a {
+          color: ${({ theme }) => theme.colors.text_pure};
+        }
       }
 
       li:hover {
