@@ -8,7 +8,7 @@ import { Container } from '../styles/global'
 
 import { Calendar, File, Clock } from 'react-feather';
 
-import { ContentFunctionalities, ContentHome, ContentPlans, ContentProject, ContentTestimony } from './styles'
+import { ContentFunctionalities, ContentHome, ContentPlans, ContentProject, ContentTestimony } from '../styles/styles'
 import { Testimony } from '../components/Testimony';
 import { Plans } from '../components/Plans';
 import { Footer } from '../components/Footer';
