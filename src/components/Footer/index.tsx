@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { BsTwitter, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { ImWhatsapp } from 'react-icons/im';
 import { IoIosArrowUp } from 'react-icons/io'
@@ -19,7 +20,7 @@ export function Footer() {
       <ContentFooter>
         <GridFooterContainer>
           <RightFooter>
-            <img src="/logo.svg" alt="Logo Flying High" />
+            <Image src="/logo.svg" alt="Logo Flying High" width={58} height={58} />
             <span>Teraph</span>
             <span>Todos os direitos reservados</span>
           </RightFooter>
