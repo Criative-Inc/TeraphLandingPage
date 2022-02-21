@@ -18,6 +18,8 @@ export const Card = styled.div`
   justify-content: center;
   align-items: center;
 
+  margin: 3rem;
+
   max-width: 380px;
 
   h3 {
