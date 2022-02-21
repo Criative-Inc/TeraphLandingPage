@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const TestimonyBox = styled.section`
   max-width: 552px;
@@ -10,8 +10,11 @@ export const TestimonyBox = styled.section`
 
   transition: all 0.2s;
 
+  border: 2px solid transparent;
+
   :hover {
     border: 2px solid ${({ theme }) => theme.colors.primary_pure};
+    transform: translateY(-5px);
   }
 
   p {
