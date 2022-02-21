@@ -70,7 +70,12 @@ export const Plan = styled.section`
 
   @media (max-width: 470px) {
     .plan-box {
-      width: 310px;
+      width: 280px;
+
+      button {
+        width: 220px;
+        height: 50px;
+      }
     }
   }
 `;

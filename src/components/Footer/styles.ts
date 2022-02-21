@@ -117,9 +117,12 @@ export const FooterFooter = styled.footer`
   align-items: center;
   margin: auto 0;
 
-  @media (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
+  @media (max-width: 880px) {
+    gap: 10rem;
+  }
+
+  @media (max-width: 880px) {
+    gap: 0;
   }
 `;
 
@@ -187,5 +190,10 @@ export const TopButton = styled.div`
 
     svg {
       color: ${({ theme }) => theme.colors.white};
+    }
+
+    @media (max-width: 480px) {
+        width: 38px;
+        height: 38px;
     }
 `;

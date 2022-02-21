@@ -39,7 +39,7 @@ export const ContentHome = styled.section`
 
   @media (max-width: 1280px) {
     flex-direction: column-reverse;
-    margin-top: 8rem;
+    height: 100%;
 
     figure {
       width: 559px;
@@ -109,7 +109,6 @@ export const ContentProject = styled.section`
 
   @media (max-width: 1280px) {
     flex-direction: column;
-    margin-top: 8rem;
 
     figure {
       width: 559px;
@@ -158,7 +157,6 @@ export const ContentFunctionalities = styled.section`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
 
     margin: 0 auto;
   }
@@ -171,8 +169,12 @@ export const ContentFunctionalities = styled.section`
     text-align: center;
   }
 
+  @media (max-width: 1280px) {
+    height: 100%;
+    margin-top: 12rem;
+  }
+
   @media (max-width: 930px) {
-    height: 80vh;
 
     .box-cards {
       flex-wrap: wrap;
