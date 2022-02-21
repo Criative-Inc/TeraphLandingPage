@@ -173,6 +173,8 @@ export const ContentHeader = styled.section`
   }
 
   @media (max-width: 970px) {
+    margin: 0 2rem;
+
     nav {
       display: none;
     }

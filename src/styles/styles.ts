@@ -60,7 +60,11 @@ export const ContentHome = styled.section`
 
   @media (max-width: 470px) {
     .hero-section {
-      max-width: 320px;
+      width: 320px;
+
+      h1 {
+        font-size: 2.25rem;
+      }
     }
 
     figure {
@@ -70,10 +74,6 @@ export const ContentHome = styled.section`
   }
 
   @media (max-width: 380px) {
-    .hero-section h1 {
-      font-size: 2.65rem;
-    }
-
     figure {
       width: 310px;
       height: 230px;
@@ -109,6 +109,7 @@ export const ContentProject = styled.section`
 
   @media (max-width: 1280px) {
     flex-direction: column;
+    margin-top: 5rem;
 
     figure {
       width: 559px;
@@ -175,7 +176,6 @@ export const ContentFunctionalities = styled.section`
   }
 
   @media (max-width: 930px) {
-
     .box-cards {
       flex-wrap: wrap;
       margin-top: 20px;
