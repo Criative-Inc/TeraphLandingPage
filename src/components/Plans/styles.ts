@@ -63,4 +63,14 @@ export const Plan = styled.section`
       margin-bottom: 18px;
     }
   }
+
+  @media (max-width: 930px) {
+    margin: 3rem 0;
+  }
+
+  @media (max-width: 470px) {
+    .plan-box {
+      width: 310px;
+    }
+  }
 `;

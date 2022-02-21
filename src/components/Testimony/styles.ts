@@ -48,4 +48,16 @@ export const TestimonyBox = styled.section`
       }
     }
   }
+
+  @media (max-width: 620px) {
+    max-width: 400px;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: 470px) {
+    max-width: 300px;
+    height: 100%;
+    padding-bottom: 20px;
+  }
 `;

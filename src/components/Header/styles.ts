@@ -9,7 +9,7 @@ export const ContentHeader = styled.section`
 
   .menu-btn {
     position: absolute;
-    top: 20px;
+    top: 55px;
     right: 20px;
     z-index: 1000;
 
@@ -166,6 +166,10 @@ export const ContentHeader = styled.section`
         margin-right: 60px;
       }
     }
+  }
+
+  @media (max-width: 1280px) {
+    margin: 0 5rem;
   }
 
   @media (max-width: 970px) {

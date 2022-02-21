@@ -36,6 +36,49 @@ export const ContentHome = styled.section`
       cursor: pointer;
     }
   }
+
+  @media (max-width: 1280px) {
+    flex-direction: column-reverse;
+    margin-top: 8rem;
+
+    figure {
+      width: 559px;
+      height: 489px;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .hero-section {
+      max-width: 400px;
+    }
+
+    figure {
+      width: 459px;
+      height: 389px;
+    }
+  }
+
+  @media (max-width: 470px) {
+    .hero-section {
+      max-width: 320px;
+    }
+
+    figure {
+      width: 359px;
+      height: 389px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .hero-section h1 {
+      font-size: 2.65rem;
+    }
+
+    figure {
+      width: 310px;
+      height: 230px;
+    }
+  }
 `;
 
 export const ContentProject = styled.section`
@@ -63,6 +106,49 @@ export const ContentProject = styled.section`
       text-align: justify;
     }
   }
+
+  @media (max-width: 1280px) {
+    flex-direction: column;
+    margin-top: 8rem;
+
+    figure {
+      width: 559px;
+      height: 489px;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .description-project {
+      max-width: 400px;
+    }
+
+    figure {
+      width: 459px;
+      height: 389px;
+    }
+  }
+
+  @media (max-width: 470px) {
+    .description-project {
+      max-width: 300px;
+    }
+
+    figure {
+      width: 359px;
+      height: 289px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .description-project h1 {
+      font-size: 2.65rem;
+    }
+
+    figure {
+      width: 310px;
+      height: 289px;
+    }
+  }
 `;
 
 export const ContentFunctionalities = styled.section`
@@ -83,6 +169,21 @@ export const ContentFunctionalities = styled.section`
     font-weight: medium;
     
     text-align: center;
+  }
+
+  @media (max-width: 930px) {
+    height: 80vh;
+
+    .box-cards {
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    h1 {
+      font-size: 2.65rem;
+    }
   }
 `;
 
@@ -105,6 +206,20 @@ export const ContentTestimony = styled.section`
     
     text-align: center;
   }
+
+  @media (max-width: 1120px) {
+    height: 100%;
+  }
+
+  @media (max-width: 930px) {
+    margin-top: 100px;
+  }
+
+  @media (max-width: 380px) {
+    h1 {
+      font-size: 2.65rem;
+    }
+  }
 `;
 
 export const ContentPlans = styled.section`
@@ -125,5 +240,21 @@ export const ContentPlans = styled.section`
     font-weight: medium;
     
     text-align: center;
+  }
+
+  @media (max-width: 930px) {
+    height: 100%;
+
+    .box-plans {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 380px) {
+    h1 {
+      font-size: 2.65rem;
+    }
   }
 `;
