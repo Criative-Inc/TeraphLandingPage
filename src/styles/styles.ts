@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ContentHome = styled.section`
   display: flex;
@@ -68,15 +68,8 @@ export const ContentHome = styled.section`
     }
 
     figure {
-      width: 359px;
-      height: 389px;
-    }
-  }
-
-  @media (max-width: 380px) {
-    figure {
       width: 310px;
-      height: 230px;
+      height: 239px;
     }
   }
 `;
@@ -131,22 +124,15 @@ export const ContentProject = styled.section`
   @media (max-width: 470px) {
     .description-project {
       max-width: 300px;
-    }
 
-    figure {
-      width: 359px;
-      height: 289px;
-    }
-  }
-
-  @media (max-width: 380px) {
-    .description-project h1 {
-      font-size: 2.65rem;
+      h1 {
+        font-size: 2.65rem;
+      }
     }
 
     figure {
       width: 310px;
-      height: 289px;
+      height: 239px;
     }
   }
 `;
@@ -157,7 +143,7 @@ export const ContentFunctionalities = styled.section`
 
   .box-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     margin-top: 12.188rem;
@@ -173,7 +159,6 @@ export const ContentFunctionalities = styled.section`
 
   @media (max-width: 1280px) {
     height: 100%;
-    margin-top: 12rem;
   }
 
   @media (max-width: 930px) {

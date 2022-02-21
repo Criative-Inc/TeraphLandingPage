@@ -29,12 +29,11 @@ export const ContentHeader = styled.section`
   }
 
   .menu-btn__burger {
-    width: 50px;
-    height: 6px;
+    width: 40px;
+    height: 5px;
 
-    background: #000;
+    background: ${({ theme }) => theme.colors.primary_pure};
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
 
     transition: all 0.5s ease-in-out;
   }
@@ -44,12 +43,11 @@ export const ContentHeader = styled.section`
     content: '';
     position: absolute;
 
-    width: 50px;
-    height: 6px;
+    width: 40px;
+    height: 5px;
 
-    background: #000;
+    background: ${({ theme }) => theme.colors.primary_pure};
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
 
     transition: all 0.5s ease-in-out;
   }
@@ -105,7 +103,7 @@ export const ContentHeader = styled.section`
       padding: 1rem 0;
 
       a {
-        font-size: 1.315rem;
+        font-size: 1.615rem;
         font-weight: medium;
         color: ${({ theme }) => theme.colors.text_pure};
       }

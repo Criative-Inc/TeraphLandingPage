@@ -12,7 +12,7 @@ export function Header(){
   }
 
   useEffect(() => {
-    const menuBtn= document.querySelector('.menu-btn');
+    const menuBtn = document.querySelector('.menu-btn')!;
     let menuOpen = false;
 
     menuBtn.addEventListener('click', () => {
@@ -59,7 +59,7 @@ export function Header(){
             <li><a href="#teraph">Teraph</a> </li>
             <li><a href="#functionalities">Funcionalidades</a></li>
             <li><a href="#testimony">Depoimentos</a></li>
-            <li><a href="#plans">Planos</a></li>
+            <li><a onClick={() => setShowMenu(!showMenu)} href="#plans">Planos</a></li>
           </ul>
         </nav>
       )}
