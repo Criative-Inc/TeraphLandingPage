@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -22,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
     border: none;
   }
 
-  a {
+  a, u {
     text-decoration: none;
   }
 
@@ -35,11 +35,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-track {
-    background-color: ${({ theme }) => theme.colors.primary_pure};
+    background-color: ${({ theme }) => theme.colors.primary_light};
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: ${({ theme }) => theme.colors.primary_light};
+    background-color: ${({ theme }) => theme.colors.primary_pure};
     border-radius: 5px;
   }
 
@@ -52,4 +52,10 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 87.5%; //14px
     }
   }
+`;
+
+export const Container = styled.main`
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 `;
