@@ -5,7 +5,7 @@ export const ContentHome = styled.section`
   justify-content: space-between;
   align-items: center;
 
-  height: calc(100vh - 170px);
+  min-height: calc(100vh - 170px);
 
   .hero-section {
     max-width: 600px;
@@ -68,15 +68,8 @@ export const ContentHome = styled.section`
     }
 
     figure {
-      width: 359px;
-      height: 389px;
-    }
-  }
-
-  @media (max-width: 380px) {
-    figure {
       width: 310px;
-      height: 230px;
+      height: 239px;
     }
   }
 `;
@@ -85,7 +78,7 @@ export const ContentProject = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90vh;
+  min-height: 100vh;
 
   .description-project {
     max-width: 570px;
@@ -131,48 +124,41 @@ export const ContentProject = styled.section`
   @media (max-width: 470px) {
     .description-project {
       max-width: 300px;
-    }
 
-    figure {
-      width: 359px;
-      height: 289px;
-    }
-  }
-
-  @media (max-width: 380px) {
-    .description-project h1 {
-      font-size: 2.65rem;
+      h1 {
+        font-size: 2.65rem;
+      }
     }
 
     figure {
       width: 310px;
-      height: 289px;
+      height: 239px;
     }
   }
 `;
 
 export const ContentFunctionalities = styled.section`
-  height: 90vh;
+  height: 100%;
+  min-height: 100vh;
 
   .box-cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
-    margin: 0 auto;
+    margin-top: 12.188rem;
   }
 
   h1 {
     font-size: 3.438rem;
-    color: ${({ theme }) => theme.colors.text_pure}
+    color: ${({ theme }) => theme.colors.text_pure};
     font-weight: medium;
-    
+
     text-align: center;
   }
 
   @media (max-width: 1280px) {
     height: 100%;
-    margin-top: 12rem;
   }
 
   @media (max-width: 930px) {
@@ -190,7 +176,7 @@ export const ContentFunctionalities = styled.section`
 `;
 
 export const ContentTestimony = styled.section`
-  height: 90vh;
+  min-height: 100vh;
 
   .box-testimony {
     display: flex;
@@ -203,9 +189,9 @@ export const ContentTestimony = styled.section`
 
   h1 {
     font-size: 3.438rem;
-    color: ${({ theme }) => theme.colors.text_pure}
+    color: ${({ theme }) => theme.colors.text_pure};
     font-weight: medium;
-    
+
     text-align: center;
   }
 
@@ -225,7 +211,7 @@ export const ContentTestimony = styled.section`
 `;
 
 export const ContentPlans = styled.section`
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 130px;
 
   .box-plans {
@@ -238,9 +224,9 @@ export const ContentPlans = styled.section`
 
   h1 {
     font-size: 3.438rem;
-    color: ${({ theme }) => theme.colors.text_pure}
+    color: ${({ theme }) => theme.colors.text_pure};
     font-weight: medium;
-    
+
     text-align: center;
   }
 
