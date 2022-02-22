@@ -1,6 +1,6 @@
 # Teraph LandingPage
 
-<img src="/src/images/home.png" alt="exemplo imagem">
+<img src="./public/home.png" alt="exemplo imagem">
 
 > Landing Page da Teraph feita em ReactJs com NextJs(com typescript) e a estilização foi feita com styled components
 > 
