@@ -18,7 +18,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Teraph</title>
-        <meta name="description" content="Aqui você irá encontrar tudo que deseja assistir. Bem vindo ao Watching.io!" />
+        <meta name="description" content="Sua plataforma de atendimento e gerenciamento de pacientes melhore seus resultados na clínica com organização e segurança." />
       </Head>
 
       <Header />
