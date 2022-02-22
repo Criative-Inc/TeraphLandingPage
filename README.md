@@ -1,4 +1,4 @@
-# Haptic-Glove
+# Teraph LandingPage
 
 <img src="/src/images/home.png" alt="exemplo imagem">
 
@@ -7,10 +7,10 @@
 
 ## Linguagens utilizadas
 
-- [ReactJS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [NextJs](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- [Typescript](https://sass-lang.com/)
-- [StyledComponents](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [ReactJS](https://pt-br.reactjs.org/)
+- [NextJs](https://nextjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [StyledComponents](https://styled-components.com/)
 
 ## 🚀 Instalando o TeraphLandingPage
 
