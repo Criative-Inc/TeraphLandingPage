@@ -18,7 +18,7 @@ Para instalar o TeraphLandingPage, siga estas etapas:
 
 Linux, macOS e Windows:
 ```
-git clone git@github.com:Criative-Inc/TeraphLadingPage.git
+git clone git@github.com:Criative-Inc/TeraphLandingPage.git
 
 cd teraph_landing_page
 
