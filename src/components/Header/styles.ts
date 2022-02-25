@@ -1,119 +1,72 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const ContentHeader = styled.section`
+interface HamburgerMenuHeaderProps {
+  showMenu: boolean;
+}
+
+export const ContentHeader = styled.section<HamburgerMenuHeaderProps>`
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  margin: 0 4rem;
+
   height: 170px;
 
-  .menu-btn {
-    position: absolute;
-    top: 55px;
-    right: 20px;
-    z-index: 1000;
+  .hamburger-react {
+    z-index: 15;
+    color: ${({ theme }) => theme.colors.primary_medium};
 
     display: none;
-    justify-content: center;
-    align-items: center;
 
-    width: 50px;
-    height: 50px;
-
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    //Here I'm using !important to override the CSS from the library
+    ${({ showMenu }) =>
+      showMenu &&
+      css`
+        position: fixed !important;
+        right: 28px;
+      `}
   }
 
-  .fixed {
+  .responsive-navbar {
     position: fixed;
-  }
+    top: 0;
+    left: 0;
 
-  .menu-btn__burger {
-    width: 40px;
-    height: 5px;
+    width: 100vw;
+    height: 100vh;
 
-    background: ${({ theme }) => theme.colors.primary_pure};
-    border-radius: 5px;
+    background-color: ${({ theme }) => theme.colors.secondary_background};
 
-    transition: all 0.5s ease-in-out;
-  }
+    z-index: 10;
 
-  .menu-btn__burger::before,
-  .menu-btn__burger::after {
-    content: '';
-    position: absolute;
-
-    width: 40px;
-    height: 5px;
-
-    background: ${({ theme }) => theme.colors.primary_pure};
-    border-radius: 5px;
-
-    transition: all 0.5s ease-in-out;
-  }
-
-  .menu-btn__burger::before {
-    transform: translateY(-16px);
-  }
-
-  .menu-btn__burger::after {
-    transform: translateY(16px);
-  }
-
-  .menu-btn.open .menu-btn__burger {
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
-  }
-
-  .menu-btn.open .menu-btn__burger::before {
-    transform: rotate(45deg) translate(35px, -35px);
-  }
-
-  .menu-btn.open .menu-btn__burger::after {
-    transform: rotate(-45deg) translate(35px, 35px);
-  }
-}
-
-.responsive-navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  width: 100vw;
-  height: 100vh;
-
-  background-color: ${({ theme }) => theme.colors.secondary_background};
-
-  z-index: 10;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  ul {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
 
-    transition-duration: 0.5s;
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
 
-    li {
-      padding: 1rem 0;
+      transition-duration: 0.5s;
 
-      a {
-        font-size: 1.615rem;
-        font-weight: medium;
-        color: ${({ theme }) => theme.colors.text_pure};
+      li {
+        padding: 1rem 0;
+
+        a {
+          font-size: 1.615rem;
+          font-weight: medium;
+          color: ${({ theme }) => theme.colors.text_pure};
+        }
+      }
+
+      li:last-child {
+        margin-left: 60px;
       }
     }
-
-    li:last-child {
-      margin-left: 60px;
-    }
   }
-}
 
   nav {
     display: flex;
@@ -177,8 +130,8 @@ export const ContentHeader = styled.section`
       display: none;
     }
 
-    .menu-btn {
-      display: flex !important;
+    .hamburger-react {
+      display: block;
     }
   }
 `;

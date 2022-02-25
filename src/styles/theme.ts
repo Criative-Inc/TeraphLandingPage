@@ -8,6 +8,7 @@ export default {
     secondary_pure: "#5BD391",
 
     white: "#ffff",
+    white_secondary: "#f7f7f7",
 
     text_pure: "#373252",
     text_medium: "#767191",
