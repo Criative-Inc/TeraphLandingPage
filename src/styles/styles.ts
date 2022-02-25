@@ -5,6 +5,8 @@ export const ContentHome = styled.section`
   justify-content: space-between;
   align-items: center;
 
+  margin: 0 4rem;
+
   min-height: calc(100vh - 170px);
 
   .hero-section {
@@ -96,7 +98,7 @@ export const ContentProject = styled.section`
       margin-top: 49px;
       color: ${({ theme }) => theme.colors.text_pure};
       font-size: 1.25rem;
-      text-align: justify;
+      text-align: left;
     }
   }
 

@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 interface HamburgerMenuHeaderProps {
   showMenu: boolean;
@@ -8,6 +8,8 @@ export const ContentHeader = styled.section<HamburgerMenuHeaderProps>`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin: 0 4rem;
 
   height: 170px;
 

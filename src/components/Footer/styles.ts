@@ -110,6 +110,7 @@ export const LeftFooter = styled.div`
 `;
 
 export const FooterFooter = styled.footer`
+  background-color: ${({ theme }) => theme.colors.white};
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -131,7 +132,7 @@ export const SocialMedias = styled.div`
     margin: 5px 20px;
     height: 58px;
     width: 58px;
-    background: ${({ theme }) => theme.colors.white};
+    background: ${({ theme }) => theme.colors.white_secondary};
     border: none;
     outline: none;
     border-radius: 0.5rem;
