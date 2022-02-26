@@ -2,13 +2,19 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image';
 import Link from 'next/link';
-import { CardsFunctionalities } from '../components/CardsFunctionalities';
-import { Header } from '../components/Header'
-import { Container } from '../styles/global'
-
 import { Calendar, File, Clock } from 'react-feather';
 
-import { ContentFunctionalities, ContentHome, ContentPlans, ContentProject, ContentTestimony } from '../styles/styles'
+import { Container } from '../styles/global'
+import { 
+  ContentFunctionalities, 
+  ContentHome, 
+  ContentPlans, 
+  ContentProject, 
+  ContentTestimony 
+} from '../styles/home'
+
+import { CardsFunctionalities } from '../components/CardsFunctionalities';
+import { Header } from '../components/Header'
 import { Testimony } from '../components/Testimony';
 import { Plans } from '../components/Plans';
 import { Footer } from '../components/Footer';
@@ -35,23 +41,23 @@ const Home: NextPage = () => {
             </p>
 
             <section>
-              <Link href="https://play.google.com/store/apps/details?id=com.teraph" passHref>
+              <a target="_blank" href="https://play.google.com/store/apps/details?id=com.teraph" rel="noreferrer">
                 <Image
                   src="/google-play-badge.svg"
                   alt="disponível na google play"
                   width={190}
                   height={72}
                 />
-              </Link>
+              </a>
 
-              <Link href="https://www.apple.com/br/app-store/" passHref>
+              <a target="_blank" href="https://www.apple.com/br/app-store/" rel="noreferrer">
                 <Image
                   src="/app-store-badge.svg"
                   alt="disponível na google play"
                   width={145}
                   height={72}
                 />
-              </Link>
+              </a>
             </section>
           </div>
 
@@ -176,4 +182,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Home;

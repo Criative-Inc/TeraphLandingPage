@@ -1,10 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContentHome = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  height: 100%;
   min-height: calc(100vh - 170px);
 
   .hero-section {
@@ -78,6 +79,8 @@ export const ContentProject = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  height: 100%;
   min-height: 100vh;
 
   .description-project {
@@ -97,6 +100,7 @@ export const ContentProject = styled.section`
       color: ${({ theme }) => theme.colors.text_pure};
       font-size: 1.25rem;
       text-align: justify;
+      line-height: 28px;
     }
   }
 
@@ -143,7 +147,7 @@ export const ContentFunctionalities = styled.section`
 
   .box-cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     margin-top: 12.188rem;
@@ -176,6 +180,7 @@ export const ContentFunctionalities = styled.section`
 `;
 
 export const ContentTestimony = styled.section`
+  height: 100%;
   min-height: 100vh;
 
   .box-testimony {
@@ -211,6 +216,7 @@ export const ContentTestimony = styled.section`
 `;
 
 export const ContentPlans = styled.section`
+  height: 100%;
   min-height: 100vh;
   margin-top: 130px;
 
