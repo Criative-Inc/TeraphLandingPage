@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ContainerFooter = styled.footer`
   min-height: 462px;
@@ -113,6 +113,7 @@ export const LeftFooter = styled.div`
 
 export const FooterFooter = styled.footer`
   max-width: 1440px;
+  background-color: ${({ theme }) => theme.colors.white};
   width: 100%;
 
   display: flex;

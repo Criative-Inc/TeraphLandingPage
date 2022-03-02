@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ContentHome = styled.section`
   display: flex;
@@ -6,6 +6,7 @@ export const ContentHome = styled.section`
   align-items: center;
 
   height: 100%;
+  margin: 0 4rem;
   min-height: calc(100vh - 170px);
 
   .hero-section {
@@ -99,8 +100,11 @@ export const ContentProject = styled.section`
       margin-top: 49px;
       color: ${({ theme }) => theme.colors.text_pure};
       font-size: 1.25rem;
+
       text-align: justify;
       line-height: 28px;
+
+      text-align: left;
     }
   }
 
