@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerFooter = styled.footer`
-  height: 462px;
+  min-height: 462px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.text_light};
   background-color: ${({ theme }) => theme.colors.white};
 
@@ -21,16 +21,19 @@ export const ContentFooter = styled.main`
 `;
 
 export const GridFooterContainer = styled.div`
-  display: grid;
-  grid-template-columns: 400px 837px;
   width: 100%;
   max-width: 1440px;
+
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 500px 837px;
+
   height: 316px;
   margin: 0 auto;
 
   @media (max-width: 1440px) {
     display: flex;
-    justify-content: space-around;
+    padding: 0 5%;
   }
 
   @media (max-width: 1040px) {
@@ -56,14 +59,13 @@ export const RightFooter = styled.div`
     line-height: 2rem;
   }
 
-  @media (max-width: 1380px) {
+  @media (max-width: 1440px) {
     border: 0;
   }
 `;
 
 export const LeftFooter = styled.div`
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
   margin-top: 71px;
   margin-left: 200px;
@@ -110,13 +112,14 @@ export const LeftFooter = styled.div`
 `;
 
 export const FooterFooter = styled.footer`
+  max-width: 1440px;
   background-color: ${({ theme }) => theme.colors.white};
   width: 100%;
+
   display: flex;
-  justify-content: space-around;
-  gap: 0 30rem;
+  justify-content: space-between;
   align-items: center;
-  margin: auto 0;
+  margin: auto;
 
   @media (max-width: 880px) {
     gap: 10rem;
@@ -129,10 +132,10 @@ export const FooterFooter = styled.footer`
 
 export const SocialMedias = styled.div`
   button {
-    margin: 5px 20px;
-    height: 58px;
-    width: 58px;
-    background: ${({ theme }) => theme.colors.white_secondary};
+    margin-right: 20px;
+    height: 48px;
+    width: 48px;
+    background: ${({ theme }) => theme.colors.white};
     border: none;
     outline: none;
     border-radius: 0.5rem;
@@ -178,8 +181,7 @@ export const SocialMedias = styled.div`
 `;
 
 export const TopButton = styled.div`
-   button {
-    margin: 5px 20px;
+  button {
     height: 48px;
     width: 48px;
     background: ${({ theme }) => theme.colors.primary_pure};
@@ -194,7 +196,8 @@ export const TopButton = styled.div`
     }
 
     @media (max-width: 480px) {
-        width: 38px;
-        height: 38px;
+      width: 38px;
+      height: 38px;
     }
+  }
 `;
